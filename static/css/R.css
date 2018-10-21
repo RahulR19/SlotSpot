@@ -1,0 +1,142 @@
+body,html{
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+  font-family: "lato",sans-serif;;
+  font-weight: 400;
+  color: black;
+  background-image: url("b10.jpeg");
+  background-size: 100%;
+
+
+}
+.A{
+ font-weight: bold;
+ font-family: arial;
+ display: inline;
+ opacity: 0.8;
+ align: center;
+ position: absolute;
+ top: 1px;
+ left: 50px;
+   font-size: 50px;
+ margin-top: 5px;
+ color:white;
+ margin-bottom: 0;
+
+}
+/*
+.pimg1{
+  position: relative;
+  opacity: 0.9;
+  background-position: center;;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+*/
+.box1{
+  margin: 60px;
+  padding: 10px;
+  padding-bottom: 0px;
+  opacity: 0.8;
+  font-size: 20px;
+  background-color: white;
+    color:black;
+
+}
+.input-field label {
+    color: black;
+
+    align-content: center;
+  }
+
+/*
+.fn{
+  width: 70%;
+  border: 2px solid #bdbdbd;
+  background-color: #90a4ae ;
+  color: #cfd8dc ;
+  border-radius:4px;
+  font-size: 27px;
+  font-family: :"lato",sans-serif;
+  margin: 8px 0px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 3s;
+  border-color: #607d8b;
+  box-shadow: 2px;
+  margin-bottom: 40px;
+
+
+}
+
+.fn{
+  width: 70%;
+  border: 2px solid #bdbdbd;
+  background-color: #90a4ae ;
+  color: #cfd8dc ;
+  border-radius:4px;
+  font-size: 27px;
+  font-family: :"lato",sans-serif;
+  margin: 8px 0px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 3s;
+  border-color: #607d8b;
+  box-shadow: 2px;
+  margin-bottom: 40px;
+
+
+
+}
+
+.ln{
+  width: 70%;
+  border: 2px solid #bdbdbd;
+  background-color: #90a4ae ;
+  color: #cfd8dc ;
+  border-radius:4px;
+  font-size: 27px;
+  font-family: :"lato",sans-serif;
+  margin: 8px 0px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 3s;
+  border-color: #607d8b;
+  box-shadow: 2px;
+  margin-bottom: 40px;
+
+
+}*/
+
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 20px 40px;
+  padding-bottom: 30px;
+  text-decoration: none;
+transition: background .5s;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+vertical-align: middle;
+}
+.btn:hover {
+  background: #b71c1c  ;
+  cursor:crosshair;
+  transition: background .5s;
+}
+
+@media(max-width:568px){
+  .pimg1,.pimg2,.pimg3,.pimg4{
+    background-attachment:scroll;
+  }
+
+}

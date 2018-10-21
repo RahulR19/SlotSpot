@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CANCEL</title>
+    {% load static %}
+    <link href={% static 'css/C.css'  %} rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="C.css" type="text/css" rel="stylesheet">
+  <body>
+    <h2 class="A">CANCEL</h2>
+    <p>Roll number and Pin does not match. Please try again !!!</p>
+    <section class="box1">
+     <form method="post"> {% csrf_token %}
+      <div class="input-field">
+        <i class="material-icons prefix">format_list_numbered</i>
+        <input type="text" id="icon-prefix" name="Rollno">
+        <label class="active" for="icon-prefix">Roll Number</label>
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">security</i>
+        <input  type="text" id="icon-prefix" name="Pin">
+        <label class="active" for="icon-prefix">Pin Number</label>
+      </div>
+       <button type="submit" class="btn btn-default" >Submit</button>
+   </form>
+
+</section>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</head>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.crop {
+ height: 375px;
+ width: 350px;
+ overflow: hidden;
+}
+.crop img {
+ height: auto;
+ width: 300px;
+}
+
+.column {
+    position:relative;
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+.column .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.column .btn:hover {
+    background-color: black;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body{
+    background-image:url('/static/css/B21.jpg');
+}
+</style>
+</head>
+<body>
+
+<h2>Select Equipment</h2>
+
+<div class="row">
+  <div class="column crop">
+    <img src="/static/css/3d_printer.jpg" alt="Snow" style="width:100%">
+    <form method="post">{% csrf_token %}
+    <button type="submit" class="btn" value="3D Printer" name="Instrument">3D Printer</button>
+    </form>  </div>
+
+  <div class="column crop">
+    <img src="/static/css/raspberry.jpg" alt="Snow" style="width:95%">
+    <form method="post">{% csrf_token %}
+    <button type="submit" class="btn" value="Rasperry Pi & Arduinos" name="Instrument">Raspberry Pi & Arduinos</button>
+    </form>
+  </div>
+
+  <div class="column crop">
+    <img src="/static/css/power.jpg" alt="Snow" style="width:100%">
+    <form method="post">{% csrf_token %}
+    <button type="submit" class="btn" value="Power Tools" name="Instrument">Power Tools</button>
+    </form>
+  </div>
+
+  <div class="column crop">
+    <img src="/static/css/electronics.jpg" alt="Snow" style="width:100%">
+    <form method="post">{% csrf_token %}
+    <button type="submit" class="btn" value="Electronics" name="Instrument">Electronics</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

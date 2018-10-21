@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RESERVE</title>
+
+    {% load static %}
+    <link href={% static 'css/R.css'  %} rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link  type="text/css" rel="stylesheet">
+  <body>
+    <h2 class="A">RESERVE</h2>
+    <section class="box1">
+       <form method="post"> {% csrf_token %}
+      <div class="input-field">
+        <i class="material-icons prefix">format_list_numbered</i>
+        <input type="text" id="icon-prefix" name="Rollno">
+        <label class="active" for="icon-prefix">Roll Number</label>
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input type="text" id="icon-prefix" name="First">
+        <label class="active" for="icon-prefix">First Name</label>
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input type="text" id="icon-prefix" name="Last">
+        <label class="active" for="icon-prefix">Last Name</label>
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">email</i>
+        <input type="email" id="icon-prefix" class="validate" name="Email">
+        <label class="active" for="icon-prefix">Email</label>
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">phone</i>
+        <input type="text" id="icon-prefix" name="Phone">
+        <label class="active" for="icon-prefix">Phone</label>
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">security</i>
+        <input  type="text" id="icon-prefix" name="Pin">
+        <label class="active" for="icon-prefix">Pin Number(a four digit code of your choice)</label>
+      </div>
+     <button type="submit" class="btn btn-default" >Submit</button>
+
+   </form>
+</section>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });</script>
+
+<script>
+$('.timepicker').pickatime({
+    default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+    fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+    twelvehour: false, // Use AM/PM or 24-hour format
+    donetext: 'OK', // text for done-button
+    cleartext: 'Clear', // text for clear-button
+    canceltext: 'Cancel', // Text for cancel-button
+    autoclose: false, // automatic close timepicker
+    ampmclickable: true, // make AM PM clickable
+    aftershow: function(){} //Function for after opening timepicker
+  });
+</script>
+</body>
+</head>
+</html>

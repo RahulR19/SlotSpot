@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Title</title>
+        <style>
+            body {
+                font-weight: 200;
+                font-size: 14px;
+            }
+            .border   {
+                border-width: 2px;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: black;
+            }
+            .text      {
+                text-align:left;
+                font-size: 15px;
+            }
+            .header {
+                font-size: 30px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 30px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='header'>
+                <p class='title'>Slot Booking</p>
+            </div>
+        <div>
+        <div class="details border text">
+            Roll Number : {{Rollno}}<br/>
+            First Name : {{First}}<br/>
+            Last Name : {{Last}}<br/>
+            Email : {{Email}}<br/>
+            Phone : {{Phone}}<br/>
+            Date : {{Date}}<br/>
+            Time : {{Time}}<br/>
+            Pin : {{Pin}}<br/>
+            Instrument : {{Instrument}}
+        </div>
+    </div>
+    </body>

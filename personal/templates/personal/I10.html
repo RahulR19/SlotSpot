@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SELECT EQUIPMENT</title>
+
+    {% load static %}
+    <link href={% static 'css/S.css'  %} rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="S.css" type="text/css" rel="stylesheet">
+  <body>
+  <h2 class="A">SELECT EQUIPMENT</h2>
+   <section class="box1">
+    <form method="post"> {% csrf_token %}
+      <div class="row" >
+      <div class="col s12 m7">
+          <img src="b32.jpg">
+          <name="3D Printer">
+          <form method="post">
+          <button type="submit" name="Instrument" value="3D Printer" class="btn-link">SELECT</button>
+          </form>
+        </div>
+      </div>
+
+
+<div class="row" >
+<div class="col s12 m7">
+<div class="card">
+  <div class="card-image">
+    <img src="b32.jpg">
+    <span class="card-title">Rasperry Pi & Arduinos</span>
+  </div>
+  <div class="card-action">
+    <a href="#">SELECT</a>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12 m7">
+<div class="card">
+  <div class="card-image">
+    <img src="b33.jpg">
+    <span class="card-title">Power Tools</span>
+  </div>
+  <div class="card-action">
+    <a href="#">SELECT</a>
+  </div>
+</div>
+</div>
+</div>
+<div class="row" class="b2">
+<div class="col s12 m7">
+<div class="card">
+  <div class="card-image">
+    <img src="b34.jpg">
+    <span class="card-title">Electronics</span>
+  </div>
+  <div class="card-action">
+    <a href="#">SELECT</a>
+  </div>
+</div>
+</div>
+</div>
+ <button type="submit" class="btn btn-default" >Submit</button>
+</form>
+</section>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</head>
+</html>
