@@ -56,7 +56,6 @@ def slot(request):
     a = ['success','success','success','success','success','success','success','success','submit','submit','submit','submit','submit','submit','submit','submit']
 
     for tt in s :
-        print(count)
         if Reserve.objects.filter(Date = d, Instrument = i, Time = s[count]) :
             a[count] = 'danger'
             a[count+8] = 'button'
