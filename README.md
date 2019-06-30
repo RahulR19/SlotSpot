@@ -6,4 +6,4 @@ The front-end is designed using Bootstrap.
 
 The back-end is built with Django (Python).
 
-For more details refer Fablab.docx
+For more details, refer Fablab.docx
